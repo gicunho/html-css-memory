@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Nerko One', cursive;
+    text-shadow: 1px 1px grey;
 }
 
 body{
@@ -10,7 +11,7 @@ body{
 }
 
 .container{
-    width: 70%;
+    width: 1350px;
     margin: auto;
 }
 
@@ -23,19 +24,66 @@ header{
 }
 
 .card{
-    width: 250px;
-    height: 300px;
-    background-color: white;
+    width: 300px;
+    height: 350px;
     border-radius: 5%;
-    padding: 20px;
+    display: inline-block;
+    margin: 0 30px 50px 0;
+    position: relative;
+    background-color: white;
 }
 
-.card_picture > img {
+.card_picture, .card_text{
+    display: block;
     width: 100%;
+    text-align: center;
+}
+
+.card_picture{
+    height: 70%;
     object-fit: contain;
+    position: absolute;
+    top: 20px;
 }
 
 .card_text {
-    font-size: 40px;
-    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.card_back{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5%;
+}
+
+.card:hover .card_back{
+    display: none;
+}
+
+.baloon{
+    color: #e61986;
+}
+
+.tractor{
+    color: #e67919;
+}
+
+.bicycle{
+    color: red;
+}
+
+.submarine{
+    color: blue;
+}
+
+.tram{
+    color: green;
+}
+
+.cruise{
+    color: greenyellow;
 }
